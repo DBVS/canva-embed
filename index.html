@@ -1,5 +1,41 @@
-<iframe 
-  src="https://dbvs.github.io/canva-embed/index2.html" 
-  style="width: 100%; height: 768px; border: none;" 
-  allowfullscreen>
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NeetoCal Embed</title>
+    <style>
+      /* Make the NeetoCal container responsive */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #inline-embed-container {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="inline-embed-container"></div>
+    <script>
+      window.neetoCal = window.neetoCal || {
+        embed: function () {
+          (neetoCal.q = neetoCal.q || []).push(arguments);
+        },
+      };
+    </script>
+    <script async src="https://compassofficial.neetocal.com/javascript/embed.js"></script>
+    <script>
+      neetoCal.embed({
+        type: "inline",
+        id: "66470e04-9722-44bb-96e0-29ace010989c",
+        organization: "compassofficial",
+        elementSelector: "#inline-embed-container",
+        styles: { height: "100%", width: "100%" },
+        isSidebarAndCoverImgHidden: "true",
+      });
+    </script>
+  </body>
+</html>
